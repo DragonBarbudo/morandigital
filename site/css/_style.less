@@ -1,0 +1,144 @@
+@import '../../dw/dw.less';
+//CONTAINER WIDTHS:
+@containerWidth: 960px;
+@containerWidthTablet: 480px;
+
+@b: #222;
+@w: #f5f5f5;
+@main: #09B5A4;
+
+
+body{
+font-family: 'Lato', sans-serif;
+
+}
+#titulo{
+margin-top: 100px;
+font-size: 2.3em;
+font-weight: 700;
+color:@w;
+text-shadow: 0em 0.1em #333;
+text-align: center;
+       
+@media @mobile{
+font-size: 1.3em;
+}
+@media @tablet{
+ font-size: 1.6em;
+ }
+    
+}
+
+#texto{
+margin:10px;
+font-size: 1.5em;
+font-weight: 500;
+text-align: center;
+color:@w;
+    @media @mobile{
+font-size: 1em;
+}
+@media @tablet{
+ font-size: 0.9em;
+ }
+}
+a:link,active {
+    text-decoration: none;
+    color: @main;
+    font-weight: 600;
+    text-shadow: 0em 0.1em #333;
+    text-align: center;
+}
+a:hover {
+    color: @w;
+
+}
+a:visited {
+    color: @main;
+}
+
+#redes{
+opacity: .9;
+    margin-top: 100px;
+
+}
+#inicio{
+height: 500px;
+
+}
+#proyectos{
+height: 345px;
+margin-top: 30px;
+ background: rgba(0,0,0,.8);}
+#contacto{
+    height: 665px;
+
+}
+#texto2{
+text-align: center;
+font-size: 1.7em;
+margin-top: 130px;
+    
+@media @mobile{
+font-size: 1em;
+margin-top: 90px;
+}
+@media @tablet{
+ font-size: 1.4em;
+    margin-top: 90px;
+
+ }
+
+
+}
+label{
+color: @main;
+background: @b;
+margin-top: 30px;
+    
+}
+#contacto{
+height: 650px;
+}
+#formulario{
+ background: rgba(0,0,0,.8);
+margin-top: 60px;
+}
+.slick-arrow{
+height: 60px;
+color: @main;
+background: @b;
+}
+#footer{
+ background: rgba(0,0,0,.8);
+
+}
+#titulos{
+@media @mobile{
+font-size: 0.3em;
+}
+@media @tablet{
+    font-size: 0.5em;
+
+}
+
+}
+
+button{
+
+    width: 520px; 
+    height: 50px;
+    background: @main;
+    font-size: 2em;
+    color:@w;
+    border:none;
+    position: absolute;
+    right: 9px;
+    top: 300px;
+    &:hover{
+      background: @w;
+      color:@main;
+
+    }
+
+}

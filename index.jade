@@ -1,0 +1,65 @@
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+      
+      +sliderbg('body', 'site/img/fondo.png' ).w100
+      
+      .container#logotipo
+          .col3.push5
+              img(src="site/img/logo.png", alt="")
+        
+                 
+      
+           .container#inicio
+              .col12#titulo
+                  p El marketing digital para tu empresa es muy importante
+              .col12#texto
+                  p “Toda empresa necesita una identidad, un concepto y un medio de difusión. creamos tu imagen, te ayudamos a aterrizar tu empresa y desarrollamos tu material digital."
+              .col4#titulos
+                   a(href="#proyectos",data-scroll)<p style="font-size:4.5em;">Proyectos</p></a>
+               .col1.push2#titulos
+                  <p style="font-size:4em;color: #09B5A4;">|</p></a>
+               .col4.push1#titulos
+                    a(href="#contacto",data-scroll )<p style="font-size:5em;">Contacto</p></a> 
+                      
+                 
+           .container#redes
+                .col3.push6
+                    img(src="site/img/t.png", alt="")
+                    img(src="site/img/f.png", alt="")
+        #proyectos
+                .col12#footer
+                    .col6
+                        a(href="#inicio",data-scroll)<p style="font-size:1.5em;">Inicio</p></a>
+                    .col5
+                        a(href="#contacto",data-scroll )<p style="font-size:1.5em;">Contacto</p></a>
+                .col12#texto2(data-sr="enter top")
+                     <p style="color: #f2f2f2;">Desarrollo web|<b style="color: #09B5A4;"> Diseño digital</b>| Desarrollo de videjuegos |<b style="color: #09B5A4;"> Realidad aumentada</b> | Video digital y FX | <b style="color: #09B5A4;">Desarrollo de aplicaciones </b>| Realidad virtual |<b style="color: #09B5A4;"> Animación </b>| Audio |<b style="color: #09B5A4;"> HTML </b>| CSS |<b style="color: #09B5A4;"> JS</b> | PHP | <b style="color: #09B5A4;">Bases de datos </b>|  Wordpress | <b style="color: #09B5A4;"> MySQL</b> | AngularJS | <b style="color: #09B5A4;">CouchDb</b> </p>
+
+              +slider('multiplebox', 'site/img/book/1.jpg', 'site/img/book/2.jpg', 'site/img/book/3.jpg','site/img/book/3_1.jpg','site/img/book/3_2.jpg','site/img/book/3_3.jpg','site/img/book/3_4.jpg','site/img/book/4.jpg','site/img/book/5.jpg','site/img/book/6.jpg','site/img/book/7.jpg','site/img/book/8.jpg','site/img/book/9.jpg','site/img/book/10.jpg','site/img/book/11.jpg','site/img/book/12.jpg','site/img/book/13.jpg','site/img/book/14.jpg','site/img/book/15.jpg','site/img/book/16.jpg','site/img/book/17.jpg')
+                
+
+              
+          +sliderbg('proyectos', 'site/img/fondo.png' ).w100
+        .col12#footer
+            .col6
+                a(href="#inicio",data-scroll )<p style="font-size:1.5em;">Inicio</p></a>
+            .col5
+                a(href="#proyectos", data-scroll)<p style="font-size:1.5em;">Proyectos</p></a>
+        #contacto
+            .col3.push5
+              img(src="site/img/logo.png", alt="")
+            .container
+                 .col7.push2#formulario(data-sr="enter top")
+                    +formSimple('monzedesign@gmail.com', 'monzedesign@gmail.com', 'Asunto del correo')
+      
+
+        +sliderbg('contacto', 'site/img/proyectos.jpeg' ).w100
+
+      
+             
+                 
+                
+    +scripts
