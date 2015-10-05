@@ -861,7 +861,7 @@ a:visited {
   margin-top: 100px;
 }
 #inicio {
-  height: 500px;
+  height: 515px;
 }
 #proyectos {
   height: 345px;
@@ -919,7 +919,7 @@ label {
   }
 }
 button {
-  width: 520px;
+  swidth: 520px;
   height: 50px;
   background: #09b5a4;
   font-size: 2em;
@@ -932,4 +932,14 @@ button {
 button:hover {
   background: #f5f5f5;
   color: #09b5a4;
+}
+@media only screen and (max-width: 480px) {
+  button {
+    width: 150px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 959px) {
+  button {
+    width: 250px;
+  }
 }
